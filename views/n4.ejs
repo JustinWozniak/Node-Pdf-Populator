@@ -1,0 +1,26 @@
+<html lang="en">
+   <%- include header %>
+   <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron" id="maindivId">
+      <h3>Please chose one of the following tenants: </h3>
+ 
+<table cellpadding="7" cellspacing="7">
+    <% 
+    if(data.length){ 
+      for(var i = 0;i < data.length;i++) {
+         %>
+    <tr></tr>
+      <a id="tenantId" href="/launchPdf?<%=data[i].tenantsName%>" action="POST"> <%=data[i].tenantsName%> </a>
+      </td>
+    </tr>  
+    <% 
+  } 
+    }else{ %>
+    <tr>
+      <td colspan="3">No tenants found!</td>
+    </tr>
+  <%
+} %>
+  </table>
+</div>
+    <%- include footer %>

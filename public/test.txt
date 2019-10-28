@@ -1,0 +1,1 @@
+{"id":4,"checkbox1":1,"checkbox2":1,"checkbox3":1,"checkbox4":1,"checkbox5":1,"checkbox6":1,"checkbox7":1,"tenantsName":"Vanilla Ice","landlordsName":"Justin Wozniak","addressOfUnit":"654 fake street","amountOwing":678678,"dateToPay":"30 09 2019","rentPaid":786876,"rentOwing":687687,"totalOwing":87687,"checkbox8":0,"day":"30","month":"09","year":"2019"}

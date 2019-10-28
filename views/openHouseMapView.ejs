@@ -1,0 +1,60 @@
+
+
+<html lang="en">
+        <html lang="en">
+
+                <%- include openHouseHeader %>
+                <!-- Main component for a primary marketing message or call to action -->
+                   <div class="jumbotron" id="maindivId">
+             <h2>Map View</h2>
+                  <h3>Open Houses right now...<br>
+<!--                     
+<table cellpadding="7" cellspacing="7">
+  <% 
+  if(data.length){ 
+    for(var i = 0;i < data.length;i++) {
+       %>
+  <tr></tr>
+    <a id="noidyet" href="/" action="POST"> <%=data[i].Streetaddress%> <%= data[i].City %> <%= data[i].Province %> </a><br>
+    </td>
+  </tr>  
+  <% 
+} 
+  }else{ %>
+  <tr>
+    <td colspan="3">No tenants found!</td>
+  </tr>
+<%
+} %>
+</table> -->
+                  </h3>
+<body>
+    <div id="map"></div>
+      <!--JS -->
+      <!-- Loading the JS in body so that it doesn't block the loading of external CSS, images, and other assets while it’s downloading JavaScript. -->
+     <!--  Load Jquery and underscore for traversing driver's list -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+   <!--  Loading leaflet JS file -->
+    <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <!--   JS for locate button -->
+    <script type="text/javascript" src="/js/easy-button.js"></script>
+   <!--  Loading configuration file  -->
+    <script type="text/javascript" src="/config/config.js"></script>
+    <!--  JS for Leaflet Routing -->
+    <script type="text/javascript" src="/js/leaflet-routing-machine.js"></script>
+   <!--  JS for rotating the marker icon -->
+    <script type="text/javascript" src="/js/Marker.Rotate.js"></script>
+    <!-- JS for moving the marker icon -->
+    <script type="text/javascript" src="/js/MovingMarker.js"></script>
+    <!-- JS for socket connection -->
+    <!-- <script type="text/javascript" src="/socket.io/socket.io.js"></script> -->
+    <script type="text/javascript" src="/socket.js"></script>
+    <!-- Corresponding JS file of customer -->
+    <script type="text/javascript" src="/js/customer.js"></script>
+
+    <button id="button1" onclick="nearby(0)" style="width:100%" style="width:100%" type="button" autofocus><b>Book an agent</b></button>
+    <!-- <button id="button2" onclick="nearby(1)" style="width:inline" type="button" autofocus><b>Book Service</b></button> -->
+</body>
+
+</html>

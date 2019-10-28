@@ -1,0 +1,27 @@
+<html lang="en">
+        <html lang="en">
+
+                <%- include openHouseHeader %>
+                <!-- Main component for a primary marketing message or call to action -->
+                   <div class="jumbotron" id="maindivId">
+             <h3>Open Houses in your area include....</h3>
+         
+<table cellpadding="7" cellspacing="7">
+        <% 
+        if(data.length){ 
+          for(var i = 0;i < data.length;i++) {
+             %>
+        <tr></tr>
+          <a id="noidyet" href="/" action="POST"> <%=data[i].Streetaddress%> <%= data[i].City %> <%= data[i].Province %> </a><br>
+          </td>
+        </tr>  
+        <% 
+      } 
+        }else{ %>
+        <tr>
+          <td colspan="3">No tenants found!</td>
+        </tr>
+      <%
+    } %>
+      </table>
+    </div>
